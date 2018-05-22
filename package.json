@@ -1,0 +1,41 @@
+{
+  "name": "hex2rgbcolor",
+  "version": "1.0.0",
+  "description": "Javascript plugin that allows conversions between RGB and Hexadecimal",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grvty-labs/Hex2RgbColor.git"
+  },
+  "keywords": [
+    "hex",
+    "rgb",
+    "color",
+    "convert",
+    "hexadecimal",
+    "component"
+  ],
+  "author": "Yamil Díaz Aguirre <yamilquery@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grvty-labs/Hex2RgbColor/issues"
+  },
+  "homepage": "https://github.com/grvty-labs/Hex2RgbColor#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^22.4.4",
+    "react-test-renderer": "^16.3.2",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|redux-persist)/)"
+    ]
+  }
+}

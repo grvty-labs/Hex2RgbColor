@@ -1,0 +1,10 @@
+{
+  "presets": ["flow"],
+  "env": {
+    "development": {
+    },
+    "test": {
+      "presets": ["es2015"]
+    }
+  }
+}

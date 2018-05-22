@@ -1,4 +1,3 @@
-// @flow
 import { hexToRgb, arrayHexToRgb, arrayRgbToHex } from './';
 
 test('Convert hexadecimal string to RgbType', () => {

@@ -1,6 +1,6 @@
 {
   "name": "hex2rgbcolor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript plugin that allows conversions between RGB and Hexadecimal",
   "main": "index.js",
   "scripts": {

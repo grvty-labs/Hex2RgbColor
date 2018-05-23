@@ -1,1 +1,1 @@
-import { hexToRgb, arrayRgbToHex, arrayHexToRgb } from './';
+import { hexToRgb, arrayRgbToHex, arrayHexToRgb } from './hex2rgbcolor';

@@ -2,7 +2,7 @@
 /**
 * @name               Hex2RgbColor
 * @descripton         Javascript plugin that allows conversions between RGB and Hexadecimal
-* @version            1.0.5
+* @version            1.0.6
 *
 * @author             Yamil Díaz Aguirre
 * @author-email       yamilquery@gmail.com

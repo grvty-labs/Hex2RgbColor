@@ -28,6 +28,10 @@ const b = [
 
 arrayRgbToHex(b); // ['#ff0000', '#abc001', '#bbaa00']
 
+yiq_is_light('#000000'); // false
+
+yiq_is_light('#ffffff'); // true
+
 
 ```
 

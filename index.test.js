@@ -1,4 +1,4 @@
-import { hexToRgb, arrayHexToRgb, arrayRgbToHex } from './src';
+import { hexToRgb, arrayHexToRgb, arrayRgbToHex, yiq_is_light } from './src';
 
 test('Convert hexadecimal string to RgbType', () => {
   expect(hexToRgb('#F00')).toEqual({ r: 255, g: 0, b: 0 });
@@ -29,4 +29,14 @@ test('Convert array of RgbType to array of hexadecimal', () => {
     {"b": 0, "g": 170, "r": 187}
   ];
   expect(arrayRgbToHex(a)).toEqual(['#ff0000', '#abc001', '#bbaa00']);
+});
+
+test('Check if the color is light', () => {
+  const h = '#fff';
+  expect(yiq_is_light(h)).toEqual(true);
+});
+
+test('Check if the color is dark', () => {
+  const h = '#000';
+  expect(yiq_is_light(h)).toEqual(false);
 });

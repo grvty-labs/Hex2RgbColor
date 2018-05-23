@@ -98,4 +98,18 @@ export const arrayRgbToHex = (a: RgbType[]): string[] => a.map(({ r, g, b }) => 
  * @return {string} Hex color
  */
 export const arrayHexToRgb = (a: string[]): RgbType[] => a.map((h: string) => hexToRgb(h));
+
+/**
+ * Determines if a color is 'light' (true) or 'dark' (false) by checking its lightness in the HSL color space
+ * @param {string} h Hexadecimal color
+ * @return {boolean} Returns true when the color is 'light' and false if is 'dark'
+ */
+export const yiq_is_light = (h: string): boolean => {
+  const r = hexToR(hex3To6(h));
+  const g = hexToG(hex3To6(h));
+  const b = hexToB(hex3To6(h));
+	const yiq = ((r*299) + (g*587) + (b*114)) / 1000;
+	return (yiq >= 128);
+}
+
 export type { RgbType };

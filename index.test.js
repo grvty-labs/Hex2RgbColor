@@ -1,4 +1,4 @@
-import { hexToRgb, arrayHexToRgb, arrayRgbToHex } from './';
+import { hexToRgb, arrayHexToRgb, arrayRgbToHex } from './src/hex2rgbcolor';
 
 test('Convert hexadecimal string to RgbType', () => {
   expect(hexToRgb('#F00')).toEqual({ r: 255, g: 0, b: 0 });

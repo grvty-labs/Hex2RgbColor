@@ -2,7 +2,6 @@
 /**
 * @name               Hex2RgbColor
 * @descripton         Javascript plugin that allows conversions between RGB and Hexadecimal
-* @version            1.0.6
 *
 * @author             Yamil Díaz Aguirre
 * @author-email       yamilquery@gmail.com
@@ -14,7 +13,7 @@ type RgbType = {
   r: number,
   g: number,
   b: number,
-}
+};
 
 /**
  * Remove the character # from hexadecimal
